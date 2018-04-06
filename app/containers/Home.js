@@ -3,9 +3,7 @@ import Home from '../components/Home'
 import { getCharacters } from "../actions/marvel";
 
 const mapStateToProps = state => {
-  console.log(state.marvel)
-  return {
-    
+  return { 
     characters: state.marvel.characters
   }
 }
