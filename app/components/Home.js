@@ -25,7 +25,7 @@ export default class Home extends Component {
         return (
             <View style={styles.container}>
                 <Text style={styles.header}>Marvel Characters</Text>
-                <ScrollView>{characters}</ScrollView>
+                {characters}
             </View>
         );
     }
