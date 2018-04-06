@@ -3,13 +3,9 @@ import MarvelService from "../services/Marvel";
 const client = new MarvelService("characters");
 
 export function getCharacters(name = "") {
-    let search = "";
-    if (name) {
-        search = `&nameStartsWith=${name}`;
-    }
 
     return dispatch => {
-        return client.getCharacters(search).then(
+        return client.getCharacters(name).then(
             response => {
                 dispatch({ type: `GET_CHARACTERS_SUCCESS`, characters: response.data.data.results});
             }
