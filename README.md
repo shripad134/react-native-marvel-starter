@@ -4,7 +4,7 @@ This starter provides a service to talk to the Marvel api. It already displays t
 * Display the thumbnail and name of the character
 * Make the list of characters scrollable
 
-## The real challeng
+## The real challenge
 * Convert the main screen to a the search results screen
 * Add a screen before this that lets you search characters by name
   * The dispatchable action already supports this as a parameter
